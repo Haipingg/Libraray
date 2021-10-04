@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008080"
+    tools:context=".ui.SecondActivity">
+    <LinearLayout
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/border_item"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="生成二维码" />
+        <View
+
+            android:layout_width="fill_parent"
+            android:layout_marginTop="1dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="12dp"
+            android:background="#696969" />
+
+        <ImageView
+            android:id="@+id/QrCodeImage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            >
+        </ImageView>
+        <TextView
+            android:id="@+id/usermassge"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_wd"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_item"
+            android:text="我的图书"
+            android:textSize="16dp"
+            android:textColor="#008080"/>
+        <Button
+            android:id="@+id/btn_jy"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_item"
+            android:text="交易明细"
+            android:textSize="16dp"
+            android:textColor="#008080"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <Button
+                android:id="@+id/QrCode"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="刷新"
+                android:textSize="16dp"
+                android:textColor="#008080"
+                android:background="@drawable/click_one"
+
+                >
+            </Button>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

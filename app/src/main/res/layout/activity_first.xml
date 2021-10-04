@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="121dp"
+            android:background="@drawable/tsbg">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_margin="6dp"
+        >
+
+        <EditText
+            android:id="@+id/edt_UserId"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/border_item"
+            android:drawableStart="@drawable/tx"
+            android:hint="@string/srzh"
+            android:drawableLeft="@drawable/tx" />
+        <EditText
+            android:id="@+id/edt_pwd1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/border_item"
+            android:drawableStart="@drawable/suo"
+            android:hint="@string/srmm"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/suo" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_dl"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button2_item"
+            android:layout_marginStart="50dp"
+            android:text="@string/dl"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginLeft="50dp" />
+
+        <CheckBox
+            android:gravity="center"
+            android:id="@+id/cb_remeber_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remeberme"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_remember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_zhuce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:text="@string/newuser"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:id="@+id/btn_yjdl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/phonesend"
+            android:textColor="#1783e3"
+            android:textSize="16sp"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+
+</LinearLayout>

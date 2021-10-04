@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SecondActivity">
+    <FrameLayout
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/userone"/>
+
+        <include layout="@layout/usertwo"/>
+
+        <com.example.onlinelibrary.ui.view.RoundImageButton
+            android:id="@+id/usertx"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="340dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/user_item"
+            />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

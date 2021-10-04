@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+
+            android:id="@+id/name1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/click_one"
+            android:layout_marginTop="30dp"
+            android:drawableEnd="@drawable/jt"
+            android:text="账号与安全"
+            android:textSize="25dp"
+            android:drawableRight="@drawable/jt">
+        </TextView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#696969" />
+        <TextView
+            android:id="@+id/name5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/click_one"
+            android:drawableEnd="@drawable/jt"
+            android:text="青少年模式"
+            android:textSize="25dp"
+            android:drawableRight="@drawable/jt">
+        </TextView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#696969" />
+
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/click_one"
+            android:drawableEnd="@drawable/jt"
+            android:text="新消息通知"
+            android:textSize="25dp"
+            android:drawableRight="@drawable/jt">
+        </TextView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#696969" />
+        <TextView
+            android:id="@+id/name6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/click_one"
+            android:drawableEnd="@drawable/jt"
+            android:text="勿扰模式"
+            android:textSize="25dp"
+            android:drawableRight="@drawable/jt">
+        </TextView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#696969" />
+
+        <TextView
+            android:id="@+id/name7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/click_one"
+            android:drawableEnd="@drawable/jt"
+            android:text="聊天"
+            android:textSize="25dp"
+            android:drawableRight="@drawable/jt">
+        </TextView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#696969" />
+        <TextView
+            android:id="@+id/name3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/click_one"
+            android:drawableEnd="@drawable/jt"
+            android:text="隐私"
+            android:textSize="25dp"
+            android:drawableRight="@drawable/jt">
+        </TextView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#696969" />
+        <TextView
+            android:id="@+id/name4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/click_one"
+            android:drawableEnd="@drawable/jt"
+            android:text="通用"
+            android:textSize="25dp"
+            >
+        </TextView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#696969" />
+
+        <TextView
+            android:id="@+id/name9"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/click_one"
+            android:drawableEnd="@drawable/jt"
+            android:text="帮助与反馈"
+            android:textSize="25dp"
+            >
+        </TextView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#696969" />
+        <Button
+            android:id="@+id/name8"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/button_item"
+            android:shadowRadius="30"
+            android:text="退出登陆"
+            android:textSize="15dp"
+
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

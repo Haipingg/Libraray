@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:layout_marginTop="220dp"
+        android:orientation="vertical">
+        <TextView
+
+            android:id="@+id/name1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/click_one"
+            android:layout_marginTop="30dp"
+            android:text="@string/zhifu"
+            android:textSize="25sp"
+            app:drawableStartCompat="@drawable/qb"
+            app:drawableLeftCompat="@drawable/qb"
+            app:drawableEndCompat="@drawable/jt"
+            android:focusable="true">
+        </TextView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#696969" />
+        <TextView
+            android:id="@+id/name5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/click_one"
+            android:text="@string/zhanghao"
+            android:textSize="25sp"
+            android:focusable="true"
+            app:drawableStartCompat="@drawable/zhgl"
+            app:drawableLeftCompat="@drawable/zhgl"
+            app:drawableEndCompat="@drawable/jt">
+        </TextView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#696969" />
+
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/click_one"
+            android:text="@string/shoucang"
+            android:textSize="25sp"
+            android:focusable="true"
+            app:drawableStartCompat="@drawable/sc"
+            app:drawableLeftCompat="@drawable/sc"
+            app:drawableEndCompat="@drawable/jt">
+        </TextView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#696969" />
+        <TextView
+            android:id="@+id/name3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/click_one"
+            android:text="@string/shezhi"
+            android:textSize="25sp"
+            app:drawableStartCompat="@drawable/sz"
+            app:drawableLeftCompat="@drawable/sz"
+            app:drawableEndCompat="@drawable/jt"
+            android:focusable="true">
+        </TextView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#696969" />
+        <TextView
+            android:id="@+id/name4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/click_one"
+            android:text="@string/fankui"
+            android:textSize="25sp"
+            app:drawableStartCompat="@drawable/fk"
+            app:drawableLeftCompat="@drawable/fk"
+            app:drawableEndCompat="@drawable/jt"
+            android:focusable="true">
+        </TextView>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#696969" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
