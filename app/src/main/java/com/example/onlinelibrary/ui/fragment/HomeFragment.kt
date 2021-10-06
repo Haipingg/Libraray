@@ -37,6 +37,8 @@ class HomeFragment :Fragment(){
 
         initBooks()
 
+
+
         val layoutManager = GridLayoutManager(activity, 4)
         recyclerView.layoutManager = layoutManager
         val adapter = BookAdapter(this, bookList)
@@ -48,8 +50,23 @@ class HomeFragment :Fragment(){
                 }
 
             }
+
+        swipeRefresh.setColorSchemeResources(R.color.colorPrimary)
+        swipeRefresh.setOnRefreshListener {
+            refreshBooks(adapter)
+        }
     }
 
+    private fun  refreshBooks(adapter: BookAdapter){
+        thread {
+            Thread.sleep(2000)
+            activity?.runOnUiThread{
+                initBooks()
+                adapter.notifyDataSetChanged()
+                swipeRefresh.isRefreshing = false
+            }
+        }
+    }
 
              val bookList = ArrayList<Book>()
              private fun initBooks(){
@@ -61,6 +78,7 @@ class HomeFragment :Fragment(){
                      bookList.add((books[index]))
                         }
                 }
+
 
 
 }

@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/smssdk_login_bg"
+    android:background="@drawable/ssmbg"
     android:orientation="vertical">
 
     <ImageView
@@ -119,7 +119,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:text="@string/smssdk_get_code"
-            android:background="@drawable/button_item"
+            android:textColor="@color/smssdk_464646"
             android:textSize="16sp" />
 
         <View
@@ -135,8 +135,9 @@
         android:layout_height="46dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
-        android:background="@drawable/button_item"
+        android:background="@drawable/smssdk_corner_white_bg"
         android:gravity="center"
         android:text="@string/smssdk_verify"
+        android:textColor="@color/smssdk_black"
         android:textSize="14sp" />
 </LinearLayout>

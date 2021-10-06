@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.onlinelibrary.R
 import com.example.onlinelibrary.logic.MyDatabaseHelper
+import com.example.onlinelibrary.ui.smsui.VerifyActivity
 import kotlinx.android.synthetic.main.activity_first.*
 
 

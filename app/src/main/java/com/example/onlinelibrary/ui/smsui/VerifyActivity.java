@@ -1,4 +1,4 @@
-package com.example.onlinelibrary.ui;
+package com.example.onlinelibrary.ui.smsui;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.onlinelibrary.R;
+import com.example.onlinelibrary.ui.SecondActivity;
 import com.mob.tools.FakeActivity;
 import com.mob.tools.utils.ResHelper;
 import com.mob.tools.utils.SharePrefrenceHelper;
@@ -32,7 +33,7 @@ import java.util.HashMap;
 import cn.smssdk.EventHandler;
 import cn.smssdk.SMSSDK;
 import cn.smssdk.UserInterruptException;
-import com.example.onlinelibrary.util.DemoResHelper;
+import com.example.onlinelibrary.logic.smsutil.DemoResHelper;
 import cn.smssdk.gui.CountryPage;
 
 /**
@@ -65,7 +66,7 @@ public class VerifyActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sms);
+        setContentView(R.layout.smssdk_verify_activity);
         initViews();
         initListener();
 
@@ -192,8 +193,14 @@ public class VerifyActivity extends Activity implements View.OnClickListener {
                         public void run() {
                             //提交验证成功，跳转成功页面，否则toast提示
                             if (result == SMSSDK.RESULT_COMPLETE) {
-                                ResultActivity.startActivityForResult(
-                                		VerifyActivity.this, REQUEST_CODE_VERIFY, true, "+" + currentPrefix + " " + etPhone.getText());
+
+                                String data = "12";
+                                Intent intent= new Intent(VerifyActivity.this, SecondActivity.class);
+                                intent.putExtra("smsextra",data);
+                                startActivity(intent);
+
+                                com.example.onlinelibrary.ui.SecondActivity.startActivityForResult(
+                                        com.example.onlinelibrary.ui.smsui.VerifyActivity.this, REQUEST_CODE_VERIFY, true, "+" + currentPrefix + " " + etPhone.getText());
                             } else {
                                 processError(data);
                             }
@@ -240,11 +247,11 @@ public class VerifyActivity extends Activity implements View.OnClickListener {
                 //将当前国家带入跳转国家列表
                 CountryPage countryPage = new CountryPage();
                 countryPage.setCountryId(currentId);
-                countryPage.showForResult(VerifyActivity.this, null, callback);
+                countryPage.showForResult(com.example.onlinelibrary.ui.smsui.VerifyActivity.this, null, callback);
                 break;
             case R.id.tvVerify:
                 if (!isNetworkConnected()) {
-                    Toast.makeText(VerifyActivity.this, getString(R.string.smssdk_network_error), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(com.example.onlinelibrary.ui.smsui.VerifyActivity.this, getString(R.string.smssdk_network_error), Toast.LENGTH_SHORT).show();
                     break;
                 }
                 SMSSDK.submitVerificationCode(currentPrefix, etPhone.getText().toString().trim(), etCode.getText().toString());
@@ -257,7 +264,7 @@ public class VerifyActivity extends Activity implements View.OnClickListener {
                     break;
                 }
                 if (!isNetworkConnected()) {
-                    Toast.makeText(VerifyActivity.this, getString(R.string.smssdk_network_error), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(com.example.onlinelibrary.ui.smsui.VerifyActivity.this, getString(R.string.smssdk_network_error), Toast.LENGTH_SHORT).show();
                     break;
                 }
                 if (tvSms.isSelected()) {

@@ -1,10 +1,20 @@
 <resources>
+    <!-- Fragment下导航栏文字 -->
     <string name="app_name">Library</string>
     <string name="home">主页</string>
     <string name="add">二维码</string>
     <string name="inbox">记录</string>
     <string name="more">个人</string>
-    <!-- Fragment下导航栏文字 -->
+    <!-- 注册界面数据 -->
+    <string name="boy">男</string>
+    <string name="girl">女</string>
+    <string name="zhuce">注册用户</string>
+    <string name="zhuce_zhanghao">请输入用户账号</string>
+    <string name="zhuche_srmm">输入密码</string>
+    <string name="zhuce_qrmm">确认密码</string>
+    <string name="zhuce_phone">输入手机号</string>
+    <string name="zhuce_sms">输入短信验证码</string>
+    <!-- 登录界面数据 -->
     <string name="srzh">请输入账号</string>
     <string name="srmm">请输入密码</string>
     <string name="dl">登录</string>
@@ -18,6 +28,16 @@
     <string name="shoucang">收藏</string>
     <string name="shezhi">设置</string>
     <string name="fankui">反馈</string>
+    <!-- 账号管理页面数据 -->
+    <string name="gl_safe">账号与安全</string>
+    <string name="gl_boys">青少年模式</string>
+    <string name="gl_newsms">新消息通知</string>
+    <string name="gl_dont">勿扰模式</string>
+    <string name="gl_talk">聊天</string>
+    <string name="gl_ys">隐私</string>
+    <string name="gl_ty">通用</string>
+    <string name="gl_fk">帮助与反馈</string>
+    <string name="gl_tc">退出登录</string>
     <!-- 个人中心界面用户数据 -->
     <string name="smssdk_bind_mobile_show">手机号验证</string>
     <string name="smssdk_contact">通讯录好友</string>
@@ -40,6 +60,7 @@
     <string name="smssdk_login_success">登录成功</string>
     <string name="smssdk_login_failure">喔噢，登录失败</string>
     <string name="smssdk_service_title">本服务由MobTech SDK提供</string>
+    <string name="smssdk_failure_title">请检查4G网络链接\n超时未授权登录</string>
     <string name="smssdk_verify_again">再次验证</string>
     <string name="smssdk_customer_service">客服电话：400-685-2216</string>
     <string name="smssdk_advise">咨询客服</string>

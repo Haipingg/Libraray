@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
@@ -9,7 +11,6 @@
         android:layout_marginTop="20dp"
         android:orientation="vertical">
         <TextView
-
             android:id="@+id/name1"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -17,10 +18,11 @@
             android:clickable="true"
             android:background="@drawable/click_one"
             android:layout_marginTop="30dp"
-            android:drawableEnd="@drawable/jt"
-            android:text="账号与安全"
-            android:textSize="25dp"
-            android:drawableRight="@drawable/jt">
+            android:text="@string/gl_safe"
+            android:textSize="25sp"
+            app:drawableEndCompat="@drawable/jt"
+            app:drawableRightCompat="@drawable/jt"
+            android:focusable="true">
         </TextView>
         <View
             android:layout_width="fill_parent"
@@ -34,10 +36,11 @@
             android:gravity="center_vertical"
             android:clickable="true"
             android:background="@drawable/click_one"
-            android:drawableEnd="@drawable/jt"
-            android:text="青少年模式"
-            android:textSize="25dp"
-            android:drawableRight="@drawable/jt">
+            android:text="@string/gl_boys"
+            android:textSize="25sp"
+            android:focusable="true"
+            app:drawableEndCompat="@drawable/jt"
+            app:drawableRightCompat="@drawable/jt">
         </TextView>
         <View
             android:layout_width="fill_parent"
@@ -52,10 +55,11 @@
             android:gravity="center_vertical"
             android:clickable="true"
             android:background="@drawable/click_one"
-            android:drawableEnd="@drawable/jt"
-            android:text="新消息通知"
-            android:textSize="25dp"
-            android:drawableRight="@drawable/jt">
+            android:text="@string/gl_newsms"
+            android:textSize="25sp"
+            android:focusable="true"
+            app:drawableEndCompat="@drawable/jt"
+            app:drawableRightCompat="@drawable/jt">
         </TextView>
         <View
             android:layout_width="fill_parent"
@@ -68,10 +72,11 @@
             android:gravity="center_vertical"
             android:clickable="true"
             android:background="@drawable/click_one"
-            android:drawableEnd="@drawable/jt"
-            android:text="勿扰模式"
-            android:textSize="25dp"
-            android:drawableRight="@drawable/jt">
+            android:text="@string/gl_dont"
+            android:textSize="25sp"
+            android:focusable="true"
+            app:drawableEndCompat="@drawable/jt"
+            app:drawableRightCompat="@drawable/jt">
         </TextView>
         <View
             android:layout_width="fill_parent"
@@ -85,10 +90,11 @@
             android:gravity="center_vertical"
             android:clickable="true"
             android:background="@drawable/click_one"
-            android:drawableEnd="@drawable/jt"
-            android:text="聊天"
-            android:textSize="25dp"
-            android:drawableRight="@drawable/jt">
+            android:text="@string/gl_talk"
+            android:textSize="25sp"
+            android:focusable="true"
+            app:drawableEndCompat="@drawable/jt"
+            app:drawableRightCompat="@drawable/jt">
         </TextView>
         <View
             android:layout_width="fill_parent"
@@ -101,10 +107,11 @@
             android:gravity="center_vertical"
             android:clickable="true"
             android:background="@drawable/click_one"
-            android:drawableEnd="@drawable/jt"
-            android:text="隐私"
-            android:textSize="25dp"
-            android:drawableRight="@drawable/jt">
+            android:text="@string/gl_ys"
+            android:textSize="25sp"
+            android:focusable="true"
+            app:drawableEndCompat="@drawable/jt"
+            app:drawableRightCompat="@drawable/jt">
         </TextView>
         <View
             android:layout_width="fill_parent"
@@ -118,10 +125,10 @@
             android:clickable="true"
             android:layout_marginBottom="15dp"
             android:background="@drawable/click_one"
-            android:drawableEnd="@drawable/jt"
-            android:text="通用"
-            android:textSize="25dp"
-            >
+            android:text="@string/gl_ty"
+            android:textSize="25sp"
+            app:drawableEndCompat="@drawable/jt"
+            android:focusable="true">
         </TextView>
         <View
             android:layout_width="fill_parent"
@@ -136,10 +143,10 @@
             android:clickable="true"
             android:layout_marginBottom="15dp"
             android:background="@drawable/click_one"
-            android:drawableEnd="@drawable/jt"
-            android:text="帮助与反馈"
-            android:textSize="25dp"
-            >
+            android:text="@string/gl_fk"
+            android:textSize="25sp"
+            android:focusable="true"
+            app:drawableEndCompat="@drawable/jt">
         </TextView>
         <View
             android:layout_width="fill_parent"
@@ -153,8 +160,8 @@
             android:layout_marginTop="60dp"
             android:background="@drawable/button_item"
             android:shadowRadius="30"
-            android:text="退出登陆"
-            android:textSize="15dp"
+            android:text="@string/gl_tc"
+            android:textSize="15sp"
 
             android:textColor="#FFFFFF"/>
     </LinearLayout>

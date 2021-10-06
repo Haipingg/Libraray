@@ -32,18 +32,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineLibrary">
 
-        <activity android:name=".ui.Phone">
+        <activity android:name=".ui.SwiperActivity">
             <intent-filter>
                 <action android:name="com.example.activitytest.ACTION_START" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="com.example.activitytest.MY_BOOK" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.VerifyActivity"/>
-        <activity android:name=".ui.ResultActivity"/>
+
         <activity android:name=".ui.SingupActivity"/>
         <activity android:name=".ui.HistoryActivity"/>
-        <activity android:name=".ui.SwiperActivity"/>
+        <activity android:name=".ui.smsui.VerifyActivity"/>
         <activity android:name=".ui.BorrowActivity">
             <intent-filter>
                 <action android:name="com.example.activitytest.ACTION_START" />
@@ -60,11 +59,9 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".ui.SecondActivity"
-            />
-
-        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.SecondActivity" />
+        <activity android:name=".MainActivity"
+            tools:ignore="Instantiatable" />
         <activity android:name=".ui.First"
             android:launchMode="singleTask"/>
 

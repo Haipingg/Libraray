@@ -1,4 +1,4 @@
-package com.example.onlinelibrary.util;
+package com.example.onlinelibrary.logic.smsutil;
 
 import com.mob.tools.utils.ResHelper;
 
