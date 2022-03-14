@@ -48,9 +48,8 @@ class HomeFragment :Fragment(){
                 val intent = Intent(activity, BorrowActivity::class.java)
                 startActivity(intent)
                 }
-
             }
-
+        /**下拉刷新*/
         swipeRefresh.setColorSchemeResources(R.color.colorPrimary)
         swipeRefresh.setOnRefreshListener {
             refreshBooks(adapter)
@@ -78,8 +77,6 @@ class HomeFragment :Fragment(){
                      bookList.add((books[index]))
                         }
                 }
-
-
 
 }
 

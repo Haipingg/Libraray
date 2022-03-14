@@ -18,7 +18,6 @@ import kotlinx.android.synthetic.main.activity_second.*
 class SecondActivity : AppCompatActivity() {
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
@@ -86,7 +85,7 @@ class SecondActivity : AppCompatActivity() {
 
     /**传输的用户数据信息*/
     fun getTitles(): String? {
-        var user = ""
+        var user = "123456"
         val smsuser = intent.getStringExtra("smsextra")
         val usermassge = intent.getStringExtra("extra_data")
         if(usermassge == null){
@@ -114,12 +113,14 @@ class SecondActivity : AppCompatActivity() {
 
     /**短信验证码登录跳转到此activity*/
     companion object {
+        private val KEY_PHONE = "phone"
+
         @JvmStatic
         fun startActivityForResult(context: Activity, requestCode: Int, success: Boolean, phone: String?) {
             val intent = Intent(context, SecondActivity::class.java)
-            val good = phone
-            Log.d("测试", "$good")
             context.startActivityForResult(intent, requestCode)
+            intent.putExtra(KEY_PHONE, phone)
+            Log.d("测试", "$KEY_PHONE ")
         }
     }
 

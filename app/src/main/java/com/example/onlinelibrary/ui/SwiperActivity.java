@@ -30,11 +30,11 @@ public class SwiperActivity extends AppCompatActivity {
     public void useBanner() {
         banner = findViewById(R.id.banner);
 
-        //—————————————————————————是图片轮播————————————————————————
+        /**—————————————————————————图片轮播————————————————————————*/
         banner.setAdapter(new BannerImageAdapter<DataBean>(DataBean.getTestData3()) {
             @Override
             public void onBindView(BannerImageHolder holder, DataBean data, int position, int size) {
-                //图片加载自己实现
+                /**加载图片*/
                 Glide.with(holder.itemView)
                         .load(data.imageUrl)
                         .apply(RequestOptions.bitmapTransform(new RoundedCorners(30)))

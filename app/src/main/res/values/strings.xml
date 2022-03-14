@@ -8,12 +8,13 @@
     <!-- 注册界面数据 -->
     <string name="boy">男</string>
     <string name="girl">女</string>
-    <string name="zhuce">注册用户</string>
-    <string name="zhuce_zhanghao">请输入用户账号</string>
+    <string name="zhuce">用户注册</string>
+    <string name="zhuce_zhanghao">请输入用户名</string>
     <string name="zhuche_srmm">输入密码</string>
     <string name="zhuce_qrmm">确认密码</string>
     <string name="zhuce_phone">输入手机号</string>
     <string name="zhuce_sms">输入短信验证码</string>
+    <string name="yanzheng">验证短信验证码</string>
     <!-- 登录界面数据 -->
     <string name="srzh">请输入账号</string>
     <string name="srmm">请输入密码</string>
@@ -68,7 +69,7 @@
 
     <!-- 隐私协议弹框 -->
     <string name="smsdemo_authorize_dialog_title">服务授权</string>
-    <string name="smsdemo_authorize_dialog_content">欢迎您使用MobTech提供的演示DEMO，SMSSDK为开发者提供完全免费的短信验证码服务，顶级通道3秒下发，适用于登录注册、找回密码、支付认证等场景。我们将依据MobTech的《隐私政策》来帮助你了解我们需要收集哪些数据。请您详细查看我们的隐私政策，详见</string>
+    <string name="smsdemo_authorize_dialog_content">欢迎您使用图书馆系统，本图书馆系统为免费的开放软件平台，为了保证您使用本软件的安全性，并帮助您能够成功的注册属于自己的账号。我们将依据MobTech的《隐私政策》来帮助你了解我们需要收集哪些数据。请您详细查看我们的隐私政策，详见</string>
     <string name="smsdemo_authorize_dialog_reject">拒绝</string>
     <string name="smsdemo_authorize_dialog_accept">同意</string>
 

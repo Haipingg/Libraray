@@ -43,7 +43,7 @@ public class VerifyActivity extends Activity implements View.OnClickListener {
 	private static final String TAG = "VerifyActivity";
     private static final String[] DEFAULT_COUNTRY = new String[]{"中国", "42", "86"};
     private static final int COUNTDOWN = 60;
-    private static final String TEMP_CODE = "1319972";
+    private static final String TEMP_CODE = null;
     private static final String KEY_START_TIME = "start_time";
     private static final int REQUEST_CODE_VERIFY = 1001;
     private TextView tvSms;
@@ -198,10 +198,10 @@ public class VerifyActivity extends Activity implements View.OnClickListener {
                                 Intent intent= new Intent(VerifyActivity.this, SecondActivity.class);
                                 intent.putExtra("smsextra",data);
                                 startActivity(intent);
-
-                                com.example.onlinelibrary.ui.SecondActivity.startActivityForResult(
+                                SecondActivity.startActivityForResult(
                                         com.example.onlinelibrary.ui.smsui.VerifyActivity.this, REQUEST_CODE_VERIFY, true, "+" + currentPrefix + " " + etPhone.getText());
-                            } else {
+
+                                  } else {
                                 processError(data);
                             }
                         }
